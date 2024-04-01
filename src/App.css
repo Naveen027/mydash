@@ -1,0 +1,332 @@
+/* Global Styles */
+canvas {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Sidebar Styles */
+.col-lg-2 {
+  background-color: #1d1850;
+  flex: 0 0 auto;
+  width: 20%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.dashboard {
+  color: white;
+  margin: 18px;
+}
+
+.dashboard i {
+  margin-right: 20px;
+}
+
+.dashbox ul {
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+
+.dashbox li {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  padding: 10px;
+  height: 40px;
+  width: 200px;
+}
+
+.dashbox li:hover {
+  background: #5244cfb0;
+  color: white;
+  border-radius: 5px;
+}
+
+.dashbox li i {
+  margin-right: 20px;
+}
+
+.dashbox li span {
+  margin-left: auto;
+}
+
+/* Content Styles */
+.col-lg-10 {
+  flex: 0 0 auto;
+  width: 80%;
+  padding: 20px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.hello-icon,
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-bar button {
+  background-color: #1d156c;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/* Boxes Styles */
+.boxes {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  gap: 25px;
+}
+
+.box1 {
+  height: 120px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+.box1 img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.box1 p {
+  padding: 0;
+  margin: 0;
+}
+
+.box1 .content {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.re {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+#ree {
+  color: black;
+}
+
+/* Doughnut Chart Styles */
+#doughnut canvas {
+  height: 250px;
+  width: 330px;
+}
+
+/* Col-lg-4 Styles */
+.col-lg-4 {
+  height: 410px;
+  background-color: white;
+  width: 400px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Table Styles */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: white;
+  color: #939090;
+  font-weight: light;
+}
+
+.description {
+  font-size: 12px;
+  color: #999;
+}
+
+.sera {
+  margin-left: 55%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.sera input[type="text"],
+.sera select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgb(140, 139, 139);
+  padding: 8px;
+}
+
+.sera input[type="text"] {
+  border-radius:  20px;
+  background-color: #f0f0f0;
+}
+
+.sera select {
+  border-radius: 20px;
+  padding: 8px 20px;
+  background-color: #f0f0f0;
+}
+
+.prod{
+  display: flex;
+}
+ #tablerow{
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 20px;
+ }
+
+ #profile{
+  margin-top: 15rem;
+ }
+
+ #profile img{
+  border-radius: 50%;
+ }
+
+ #profile span{
+  margin-left: 10px;
+ }
+
+
+ /* Add this at the end of your existing CSS */
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #1d1850;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-open {
+  transform: translateX(80%);
+  transition: transform 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Hamburger Menu Icon */
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #1d1850;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Animation for hamburger menu icon */
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Sidebar Styles for Mobile */
+  .col-lg-2 {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #1d1850;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent clicks on hidden sidebar */
+  }
+
+  .col-lg-2.active {
+    opacity: 1;
+    pointer-events: auto; /* Allow clicks on visible sidebar */
+  }
+
+  /* Content Styles for Mobile */
+  .col-lg-10 {
+    width: 100%;
+    padding: 20px;
+    margin-top: 60px; /* Adjusted to accommodate hamburger menu */
+    transition: transform 0.3s ease;
+  }
+
+  /* Push content when sidebar is active */
+  .col-lg-10.active {
+    transform: translateX(100%);
+  }
+}
+
